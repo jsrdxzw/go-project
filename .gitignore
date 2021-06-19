@@ -1,0 +1,8 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.DS_Store
+.idea
+*.iml
+wx/**/node_modules

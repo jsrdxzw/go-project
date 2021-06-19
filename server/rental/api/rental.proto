@@ -1,0 +1,15 @@
+syntax = "proto3";
+package rental.v1;
+option go_package = "coolcar/rental/api/gen/v1;rentalpb";
+
+service TripService {
+  rpc CreateTrip(CreateTripRequest) returns (CreateTripResponse);
+}
+
+message CreateTripRequest {
+  string start = 1;
+}
+
+message CreateTripResponse {
+
+}
