@@ -2,8 +2,8 @@ package dao
 
 import (
 	"context"
-	mongo3 "coolcar/shared/mongo"
-	"coolcar/shared/mongo/testing"
+	mongo3 "coolcar/shared/mgutil"
+	"coolcar/shared/mgutil/testing"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

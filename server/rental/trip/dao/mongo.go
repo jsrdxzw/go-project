@@ -1,6 +1,15 @@
 package dao
 
-import "go.mongodb.org/mongo-driver/mongo"
+import (
+	"coolcar/shared/mgutil"
+	"go.mongodb.org/mongo-driver/mongo"
+)
+
+const (
+	tripField      = "trip"
+	accountIDField = tripField + ".accountid"
+	statusField    = tripField + ".status"
+)
 
 type Mongo struct {
 	col *mongo.Collection
@@ -12,4 +21,7 @@ func NewMongo(db *mongo.Database) *Mongo {
 }
 
 type TripRecord struct {
+	mgutil.IDField
+	mgutil.UpdatedAtField
+	Trip
 }
